@@ -1,6 +1,9 @@
-# JS important Notes
+<details>
 
-# External scripts
+
+### JS important Notes
+<summary>External scripts</summary>
+
 If we have a lot of JavaScript code, we can put it into a separate file.
 
 Script files are attached to HTML with the src attribute:
