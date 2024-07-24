@@ -1,7 +1,8 @@
-<details>
+
 
 
 ### JS important Notes
+<details>
 <summary>External scripts</summary>
 
 If we have a lot of JavaScript code, we can put it into a separate file.
@@ -21,7 +22,7 @@ To attach several scripts, use multiple tags:
 <script src="/js/script2.js"></script>
 ```
 
-Please note:
+### Please note:
 As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
 
 The benefit of a separate file is that the browser will download it and store it in its cache.
@@ -48,6 +49,7 @@ The example above can be split into two scripts to work:
   alert(1);
 </script>
 ```
+</details>
 # Use hotkeys for comments!
 In most editors, a line of code can be commented out by pressing the Ctrl+/ hotkey for a single-line comment and something like Ctrl+Shift+/ – for multiline comments (select a piece of code and press the hotkey). For Mac, try Cmd instead of Ctrl and Option instead of Shift.
 
