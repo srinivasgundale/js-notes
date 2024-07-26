@@ -511,3 +511,61 @@ let x = (1 && 2) ?? 3; // Works
 alert(x); // 2
 
 
+Defining functions
+Function declarations:
+A function definition (also called a function declaration, or function statement) consists of the function keyword followed by:
+
+The name of the function.
+A list of parameters to the function, enclosed in parentheses and separated by commas.
+The JavaScript statements that define the function, enclosed in curly braces, { /* … */ }.
+For example, the following code defines a simple function named square:
+
+JS
+```
+Copy to Clipboard
+function square(number) {
+  return number * number;
+}
+```
+
+Function expressions
+While the function declaration above is syntactically a statement, functions can also be created by a function expression.
+
+Such a function can be anonymous; it does not have to have a name. For example, the function square could have been defined as:
+
+
+
+```
+const square = function (number) {
+  return number * number;
+};
+```
+console.log(square(4)); // 16
+However, a name can be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:
+```
+const factorial = function fac(n) {
+  return n < 2 ? 1 : n * fac(n - 1);
+};
+
+console.log(factorial(3)); // 6
+```
+Function expressions are convenient when passing a function as an argument to another function. The following example shows a map function that should receive a function as first argument and an array as second argument:
+```
+function map(f, a) {
+  const result = new Array(a.length);
+  for (let i = 0; i < a.length; i++) {
+    result[i] = f(a[i]);
+  }
+  return result;
+}
+```
+In the following code, the function receives a function defined by a function expression and executes it for every element of the array received as a second argument:
+
+const cube = function (val) {
+  return val*val*val;
+}
+let res = map(cube(3),[1,2,3,4,5]);
+
+```
+<script async src="//jsfiddle.net/srinivasgundale/fntoyu5r/14/embed/"></script>
+```
