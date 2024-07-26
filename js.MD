@@ -566,6 +566,4 @@ const cube = function (val) {
 }
 let res = map(cube(3),[1,2,3,4,5]);
 
-```
-<iframe width="100%" height="300" src="//jsfiddle.net/srinivasgundale/fntoyu5r/14/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-```
+<iframe width="100%" height="300" src="//jsfiddle.net/srinivasgundale/fntoyu5r/14/embedded/js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
