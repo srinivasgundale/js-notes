@@ -13,6 +13,18 @@ javascript
 let str = "Hello";
 console.log(str.charAt(1));  // Output: "e"
 console.log(str.charAt(10)); // Output: ""
+//print in reverse order
+for(i=1; i<=str.length; i++){
+    console.log(str[i]);
+    console.log(str.at(str.length - i));
+}
+for(i=str.length-1; i>= 0; i--){
+   console.log(str[i]);
+   console.log(str.charAt(i));
+}
+for (let i = -1; i >= -str.length; i--) {
+    console.log(str.charAt(i)); // returns empty
+}
 ```
 at(index)
 Purpose: Also returns the character at a specified index in a string.
@@ -31,7 +43,16 @@ console.log(str.at(10));  // Output: undefined
 
 //print in reverse order
 for(i=1; i<=str.length; i++){
+    console.log(str[i]);
     console.log(str.at(str.length - i));
+}
+for(i=str.length-1; i>= 0; i--){
+   //console.log(i)
+  console.log(str[i]);
+    console.log(str.at(i));
+}
+for (let i = -1; i >= -str.length; i--) {
+    console.log(str.at(i));
 }
 //Output
 o
