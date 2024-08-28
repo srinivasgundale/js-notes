@@ -28,6 +28,17 @@ let str = "Hello";
 console.log(str.at(1));   // Output: "e"
 console.log(str.at(-1));  // Output: "o"
 console.log(str.at(10));  // Output: undefined
+
+//print in reverse order
+for(i=1; i<=str.length; i++){
+    console.log(str.at(str.length - i));
+}
+//Output
+o
+l
+l
+e
+H
 ```
 Key Differences:
 Negative Indexing:
