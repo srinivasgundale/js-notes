@@ -8,10 +8,12 @@ Index Handling: If the index is out of range (negative or greater than the lengt
 Example:
 
 javascript
-Copy code
+
+```
 let str = "Hello";
 console.log(str.charAt(1));  // Output: "e"
 console.log(str.charAt(10)); // Output: ""
+```
 at(index)
 Purpose: Also returns the character at a specified index in a string.
 Input: Takes a single argument, the index of the character in the string.
@@ -20,11 +22,13 @@ Index Handling: Supports negative indexing, where an index of -1 refers to the l
 Example:
 
 javascript
-Copy code
+
+```
 let str = "Hello";
 console.log(str.at(1));   // Output: "e"
 console.log(str.at(-1));  // Output: "o"
 console.log(str.at(10));  // Output: undefined
+```
 Key Differences:
 Negative Indexing:
 
